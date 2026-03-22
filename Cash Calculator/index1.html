@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Calculator</title>
+    <link rel="stylesheet" href="Cash Calculator/style1.css">
+        <link rel="icon"  href="/images/money-stack.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <h1 class="Header">Cash Calculator</h1>
+            <div class="dropdown">
+                <button id="option" type="button">USA ▼</button>
+                <div id="dropdownMenu" class="dropdown-menu">
+                    <a href="#" onclick="selectCountry('USA'); return false;">USA</a>
+                    <a href="#" id="indiaOption">India</a>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <img src="../images1/100.jpg" alt="100dollar">
+            <input type="number" id="no100" class="cash-input" 
+            placeholder="Enter the no of 100 Dollar Notes">
+            <span id="txt100" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/50.jpg" alt="50dollar">
+            <input type="number" id="no50" class="cash-input" 
+            placeholder="Enter the no of 50 Dollar Notes">
+            <span id="txt50" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/10.jpg" alt="10dollar">
+            <input type="number" id="no10" class="cash-input" 
+            placeholder="Enter the no of 10 Dollar Notes">
+            <span id="txt10" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/5.jpg" alt="5dollar">
+            <input type="number" id="no5" class="cash-input" 
+            placeholder="Enter the no of 5 Dollar Notes">
+            <span id="txt5" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/1.jpg" alt="1dollar">
+            <input type="number" id="no1" class="cash-input" 
+            placeholder="Enter the no of 1 Dollar Notes">
+            <span id="txt1" class="cash-text">0</span>
+        </div>
+
+        
+
+        <div class="row">
+            <img src="../images1/50cent.png" alt="50cent">
+            <input type="number" id="nocoin50" class="cash-input" 
+            placeholder="Enter the no of 50 cent Coins">
+            <span id="txt1coin50" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/25cent.png" alt="25cent">
+            <input type="number" id="nocoin5" class="cash-input" 
+            placeholder="Enter the no of 25 cent Coins">
+            <span id="txt1coin5" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/10cent.png" alt="10Cent">
+            <input type="number" id="nocoin2" class="cash-input" 
+            placeholder="Enter the no of 10.Cent Coins">
+            <span id="txt1coin2" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <img src="../images1/1cent.png" alt="1cent">
+            <input type="number" id="nocoin1" class="cash-input" 
+            placeholder="Enter the no of 1.Cent Coins">
+            <span id="txt1coin1" class="cash-text">0</span>
+        </div>
+
+        <div class="btn-container">
+            <button id="btnReset" type="button">Reset</button>
+        </div>
+
+        <div class="row result-part">
+            <span id="txtFinalCash">Total Amount : 0</span>
+            <span id="txtFinalCashInWords">Zero</span>
+        </div>
+
+    </div>
+
+    <script src="Cash Calculator/script1.js"></script>
+</body>
+</html>
